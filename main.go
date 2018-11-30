@@ -26,7 +26,7 @@ func main() {
 		http.Handle(p, http.StripPrefix(p, http.FileServer(http.Dir(path))))
 	}
 
-	err := http.ListenAndServe(":8080", nil)
+	err := http.ListenAndServe(":8899", nil)
 	if err != nil {
 		log.Fatal("ListenAndServe: ", err)
 	}
