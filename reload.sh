@@ -17,4 +17,4 @@ kill ${pid}
 supervisorctl stop fs
 
 # re grant authorization
-chmod -R 755 restart.sh
+chmod -R 755 reload.sh
