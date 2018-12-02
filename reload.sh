@@ -8,7 +8,7 @@ git pull origin master
 supervisorctl stop fs
 
 # get listen port
-pid = `lsof -i:8899 | grep LISTEN | awk -F '[ ]+' '{print $2}'`
+pid=`lsof -i:8899 | grep LISTEN | awk -F '[ ]+' '{print $2}'`
 
 # kill port listen
 kill ${pid}
